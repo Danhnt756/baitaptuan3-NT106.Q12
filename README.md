@@ -1,12 +1,12 @@
-🧩 BÀI TẬP TUẦN 3 – MÔN LẬP TRÌNH MẠNG CĂN BẢN  
-👨‍💻 Nhóm sinh viên thực hiện  
+BÀI TẬP TUẦN 3 – MÔN LẬP TRÌNH MẠNG CĂN BẢN  
+Nhóm sinh viên thực hiện  
+  22520973	Ngô Vũ Hạo Nguyên  
   22521251	Nguyễn Duy Thế Sơn  
   24520262	Nguyễn Tấn Danh  
   24521230	Phan Lê Tuấn  
   24521940 Hứa Thiện Nhân  
-  22520973	Ngô Vũ Hạo Nguyên  
   
-📝 Mô tả bài tập  
+--Mô tả bài tập  
 
 Ứng dụng quản lý người dùng gồm 3 form chính:  
 Form Đăng ký (RegisterForm):  
@@ -22,14 +22,14 @@ Form Chính (MainForm):
 Hiển thị nút Đăng xuất để quay lại trang đăng nhập.  
 Ứng dụng được lập trình bằng C# WinForms, kết nối cơ sở dữ liệu bằng ADO.NET (SqlConnection, SqlCommand).  
 
-⚙️ Hướng dẫn cài đặt  
+--Hướng dẫn cài đặt  
   
-1️⃣ Yêu cầu  
+ Yêu cầu  
 Visual Studio 2022 (hoặc 2019)  
 .NET Framework 4.7.2 trở lên  
 SQL Server (LocalDB hoặc SQL Server Express)  
   
-2️⃣ Tạo cơ sở dữ liệu  
+--Tạo cơ sở dữ liệu  
 Mở SQL Server Management Studio (SSMS)  
 Chạy câu lệnh sau để tạo Database:  
 CREATE DATABASE UserManagerDB;  
@@ -44,17 +44,17 @@ CREATE TABLE Users (
 );  
 Lưu database lại (hoặc export ra file UserManagerDB.sql để chia sẻ).  
   
-3️⃣ Cấu hình kết nối trong code  
+--Cấu hình kết nối trong code  
   
 Trong file DbHelper.cs, sửa lại dòng kết nối đúng với máy:  
 public static string ConnectionString =  
     "Server=localhost\\SQLEXPRESS;Database=UserManagerDB;Integrated Security=True;";  
   
-💡 Nếu bạn dùng LocalDB thì thay bằng:  
+--Nếu bạn dùng LocalDB thì thay bằng:  
 public static string ConnectionString =  
     "Server=(localdb)\\MSSQLLocalDB;Database=UserManagerDB;Integrated Security=True;";  
 
-4️⃣ Chạy chương trình  
+--Chạy chương trình  
 Mở solution ex2.2.sln bằng Visual Studio  
 Bấm Start (F5) để chạy  
 Màn hình đầu tiên là Đăng nhập, chọn Đăng ký để tạo tài khoản mới.  
